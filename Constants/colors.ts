@@ -1,0 +1,17 @@
+export const Colors = {
+  purpleLight: '#8F38FE',
+  white: '#FFFFFF',
+  redError:'#FF3B30',
+  grayText: '#4E4E4E',
+  grayBorder: '#E5E5E5',
+  grayPlaceholder: '#9E9E9E',
+  grayBackground: '#F2F2F2',
+  black: '#0A0A0A',
+  purpleDeep: '#0C0820',
+  text: '#000000',
+  gray: '#A9A9A9',
+  lightGray: '#F5F5F5',
+  green: '#34C759',
+  warning: '#FFCC00',
+  danger: '#FF3B30',
+};
