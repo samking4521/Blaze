@@ -21,7 +21,7 @@ export default function VerificationCode({ route }: VerificationCodeProps) {
   const inputs = useRef<TextInput[]>([]);
   const [codes, setCodes] = useState<string[]>(Array(length).fill(""));
   const [focusedIndex, setFocusedIndex] = useState<number | null>(null);
-  const navigation = useNavigation<any>()
+  const navigation = useNavigation<VerificationCodeProps['navigation']>()
   const [timeLeft, setTimeLeft] = useState(60);
   const [isActive, setIsActive] = useState(true);
   const [codeResent, setCodeResent] = useState(false);

@@ -8,13 +8,13 @@ import { useNavigation } from '@react-navigation/native'
 import { SignInProps } from '../../../../Navigation/UserNavigation'
 import { SignInStyles } from './SignInStyles'
 
-const googleImg = require("../../../../assets/Google.png")
+const googleImg = require("../../../../assets/images/Google.png")
 
 
 export default function SignIn({route}: SignInProps) {
       const emailRef = useRef<TextInput>(null);
        const passwordRef = useRef<TextInput>(null);
-       const navigation = useNavigation<any>()
+       const navigation = useNavigation<SignInProps['navigation']>()
         const [focusedInput, setFocusedInput] = useState<string | null>(null);
         const [email, setEmail] = useState("")
         const [pressSignedIn, setPressedSignIn] = useState(false)

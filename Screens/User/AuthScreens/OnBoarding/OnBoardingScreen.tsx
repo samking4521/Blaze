@@ -1,10 +1,10 @@
 import { Pressable, Text, View } from 'react-native'
 import { Colors } from '../../../../Constants';
 import React, { useState } from 'react'
-import { onboardingImages } from '../../../../assets/onboardingImages';
+import { onboardingImages } from '../../../../assets/data/onboardingImages';
 import { StatusBar } from 'expo-status-bar';
 import Animated, {  FadeInDown } from 'react-native-reanimated';
-import OnBoardingSlidesList from '../../../../Components/OnBoarding/OnBoardingSlidesList';
+import OnBoardingSlidesList from './OnBoardingComponent/OnBoardingSlidesList';
 import { useNavigation } from '@react-navigation/native';
 import { OnBoardingStyles } from './OnBoardingStyles';
 

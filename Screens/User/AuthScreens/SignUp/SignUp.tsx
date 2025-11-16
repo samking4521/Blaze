@@ -17,10 +17,10 @@ import { useNavigation } from "@react-navigation/native";
 import { SignUpStyles } from "./SignUpStyles";
 import { SignUpProps } from "../../../../Navigation/UserNavigation";
 
-const googleLogo = require("../../../../assets/Google.png");
+const googleLogo = require("../../../../assets/images/Google.png");
 
 export default function SignUp({route}: SignUpProps) {
-  const navigation = useNavigation<any>();
+  const navigation = useNavigation<SignUpProps['navigation']>();
   const nameRef = useRef<TextInput>(null);
   const emailRef = useRef<TextInput>(null);
   const passwordRef = useRef<TextInput>(null);
@@ -251,7 +251,6 @@ const signUpUser = ()=>{
                 <Text style={SignUpStyles.passwordCheck}>At least 8 chars, one uppercase, one lowercase, one symbol.</Text>
                   </View>
                 }
-
         </View>
       </View>
       <View>

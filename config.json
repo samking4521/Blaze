@@ -1,4 +1,3 @@
-
 {
   "expo": {
     "name": "blaze",
@@ -15,11 +14,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.blaze",
-       "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "This app uses your location to show your current position.",
-        "NSLocationAlwaysUsageDescription": "This app uses your location even when the app is in the background."
-      }
+      "bundleIdentifier": "com.anonymous.blaze"
     },
     "android": {
       "adaptiveIcon": {
@@ -34,21 +29,7 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font",
-       [
-        "expo-location",
-        {
-          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
-        }
-      ],
-       [
-        "react-native-maps",
-        {
-          "iosGoogleMapsApiKey": "AIzaSyBXab7ei1aY2RjsOEa2mmCJvIQS5bYyCTI",
-          "androidGoogleMapsApiKey": "AIzaSyBXab7ei1aY2RjsOEa2mmCJvIQS5bYyCTI"
-        }
-      ]
+      "expo-font"
     ]
-    
   }
 }

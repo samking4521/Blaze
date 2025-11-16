@@ -7,8 +7,11 @@ export const FONT_FAMILY = {
 
 export const FONT_SIZE = {
   xs: 12,
+  xsl: 13,
   sm: 14,
+  lmd: 15,
   md: 16,
+  xmd: 18,
   lg: 20,
   xl: 24,
   '2xl': 30,

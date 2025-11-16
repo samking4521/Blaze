@@ -5,10 +5,11 @@ import { Colors } from '../../../../Constants'
 import { Ionicons, Feather } from '@expo/vector-icons'
 import { ForgotPasswordStyles } from './ForgotPasswordStyles'
 import { useNavigation } from '@react-navigation/native'
+import { ForgotPasswordProps } from '../../../../Navigation/UserNavigation'
 
 export default function ForgotPassword() {
      const [focusedInput, setFocusedInput] = useState<string | null>(null);
-     const navigation = useNavigation<any>();
+     const navigation = useNavigation<ForgotPasswordProps['navigation']>();
       
        const emailRef = useRef<TextInput>(null);
        const passwordRef = useRef<TextInput>(null);

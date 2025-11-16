@@ -1,10 +1,10 @@
 import { Dimensions, FlatList, Image, View } from 'react-native'
-import { Colors } from '../../Constants';
+import { Colors } from '../../../../../Constants';
 import React from 'react'
-import { onboardingImages } from '../../assets/onboardingImages';
+import { onboardingImages } from '../../../../../assets/data/onboardingImages';
 import { LinearGradient } from 'expo-linear-gradient';
 import Animated, { runOnJS, FadeInDown, useAnimatedRef, useDerivedValue, useScrollOffset, clamp, FadeInLeft, FadeInRight } from 'react-native-reanimated';
-import { OnBoardingStyles } from '../../Screens/User/AuthScreens/OnBoarding/OnBoardingStyles';
+import { OnBoardingStyles } from '../OnBoardingStyles';
 
 const {width, height} =  Dimensions.get('window');
 
